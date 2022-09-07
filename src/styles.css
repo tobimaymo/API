@@ -1,0 +1,284 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .paragraph {
+    color: black;
+  }
+  #contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+#contadorCarrito {
+  font-size: 30px
+}
+#boton-carrito {
+  margin: 5px;
+  margin-right: 10px;
+  border: 3px;
+  background-color: white;
+  border-radius: 30px;
+}
+#boton-carrito:hover {
+  background-color: #D7D7D7;
+}
+.botonnav {
+  border-radius: 10px;
+}
+.botonnav:hover{
+  background-color: #D7D7D7;
+}
+.button-74 {
+  background-color: #F6F6F6;
+  border: 2px solid #1E1E1E;
+  border-radius: 30px;
+  box-shadow: #1E1E1E 4px 4px 0 0;
+  color: #1E1E1E;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 13px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #7F7679;
+}
+
+.button-74:active {
+  box-shadow: #1E1E1E 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+.sombreadogeneral{
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.figureclass {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.figureclass img{
+  transition: all 500ms ease-out;
+  height: 100%;
+}
+.figureclass .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.figureclass:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+.figureclass:hover > .capa .tituloalbum{
+ font-size: 20px;
+}
+.figureclass:hover > .capa .descripcionalbum{
+  font-size: 15px;
+ }
+ .figureclass:hover > .capa .precioalbum{
+  font-size: 15px;
+ }
+
+.figureclass .capa .tituloalbum{
+  color: #ffffff;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 60px
+}
+.figureclass .capa .descripcionalbum{
+  color: #ffffff;
+  margin-bottom: 30px;
+  transition: all 500ms ease-out;
+  margin-top: 10px
+}
+.figureclass .capa .precioalbum{
+  color: #ffffff;
+  margin-bottom: 5px;
+  transition: all 500ms ease-out;
+  margin-top: 15px
+}
+.descripcionalbum {
+  font-size: 10px;
+}
+.navcolor {
+  background-color: white;
+}
+.sidebarnav .listasidebar {
+  list-style: none;
+}
+.sidebarnav .listasidebar li{
+  position: relative;
+  margin: 3.2em 0;
+}
+.sidebarnav .listasidebar li a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5em;
+  display: block;
+  transition: all ease-out 300ms;
+  color: rgba(255, 255, 255, 0.3);
+}
+.sidebarnav .listasidebar li a:hover {
+  color: white;
+}
+.sidebarnav .listasidebar li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #5e42a6, #b74e91)
+}
+
+.colorsidebar {
+  background-color: #0A0A0A;
+}
+.sidebarnav {
+  font-size: 15px;
+  position: relative;
+  margin: 0 15%;
+  text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+.headerimagen {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.centered {
+  font-family: Copperplate;
+  font-size: 43px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.copperplate {
+  font-family: Copperplate;
+  font-size: 25px;
+}
+.headercontainer {
+  margin: 40px 0px;
+  box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.50);
+}
+.midnightsalbum {
+  margin: 30px 0px;
+}
